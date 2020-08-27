@@ -35,6 +35,7 @@ public class videos {
         return "Video Name : " + videoName + ", " + "Video Rating : " + rating + ", " + "Is video available : " + checkOut + ".";
     }
 
+    //Equals & Hash-Code Methods
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -73,6 +74,12 @@ public class videos {
 
     public void setCheckOut(boolean checkOut) {
         this.checkOut = checkOut;
+    }
+
+    //Allows customers to rent a video.
+    public void doCheckOut() {
+        System.out.println("Thank you for renting.");
+
     }
 
 

@@ -2,17 +2,17 @@
  *   Author: Suyash Srivastava (suyash0902)
  *   Date: 27-08-2020
  *   Time: 13:47
- *   File: videostore.java
+ *   File: VideoStore.java
  */
 
 package defining;
 
 import java.util.Arrays;
 
-public class videostore {
+public class VideoStore {
     private videos[] store;
 
-    public videostore() {
+    public VideoStore() {
         this.store = new videos[5];
     }
 
@@ -33,7 +33,7 @@ public class videostore {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        videostore that = (videostore) o;
+        VideoStore that = (VideoStore) o;
         return Arrays.equals(getStore(), that.getStore());
     }
 

@@ -24,7 +24,7 @@ public class videos {
     }
 
     //Parameterized constructor
-    public videos(String videoName, int rating, boolean checkOut) {
+    public videos(String videoName) {
         this.videoName = videoName;
         this.rating = rating;
         this.checkOut = checkOut;

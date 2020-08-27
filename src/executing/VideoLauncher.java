@@ -7,6 +7,8 @@
 
 package executing;
 
+import defining.VideoStore;
+
 import java.util.Scanner;
 
 public class VideoLauncher {
@@ -28,10 +30,21 @@ public class VideoLauncher {
         System.out.println("Enter your choice from (1-6) : ");
         Scanner scanner = new Scanner(System.in);
         int customerInput = scanner.nextInt();
+        VideoStore myVideoStore = new VideoStore();
         switch (customerInput) {
             case ADD_Video:
                 break;
-
+            case CHECK_OUT_Video:
+                break;
+            case RETURN_Video:
+                break;
+            case RECEIVE_Rating:
+                break;
+            case LIST_Inventory:
+                myVideoStore.listInventory();
+                break;
+            case EXIT:
+                break;
         }
         scanner.close();
     }

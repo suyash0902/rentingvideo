@@ -14,6 +14,11 @@ public class VideoStore {
 
     public VideoStore() {
         this.store = new videos[5];
+        this.store[0] = new videos("Video 1");
+        this.store[1] = new videos("Video 2");
+        this.store[2] = new videos("Video 3");
+        this.store[3] = new videos("Video 4");
+        this.store[4] = new videos("Video 5");
     }
 
     public videos[] getStore() {

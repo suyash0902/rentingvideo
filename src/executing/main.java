@@ -11,9 +11,13 @@ import defining.videos;
 
 public class main {
     public static void main(String[] args) {
-        videos video = new videos("Intesteller", 10, true);
-        System.out.println(video);
-
+        videos video = new videos("Titanic", 10, true);
+        videos video1 = new videos("Shutter Island", 9, false);
+        if (video.equals(video1)) {
+            System.out.println("equal");
+        } else {
+            System.out.println("not equal");
+        }
     }
 }
 

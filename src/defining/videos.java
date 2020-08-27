@@ -7,6 +7,8 @@
 
 package defining;
 
+import java.util.Objects;
+
 public class videos {
     // Creating member variable
     private String videoName;
@@ -26,6 +28,26 @@ public class videos {
         this.videoName = videoName;
         this.rating = rating;
         this.checkOut = checkOut;
+    }
+
+    //To-String methods
+    public String toString() {
+        return "Video Name : " + videoName + ", " + "Video Rating : " + rating + ", " + "Is video available : " + checkOut + ".";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        videos videos = (videos) o;
+        return isCheckOut() == videos.isCheckOut() &&
+                getRating() == videos.getRating() &&
+                Objects.equals(getVideoName(), videos.getVideoName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getVideoName(), isCheckOut(), getRating());
     }
 
     //Setter Method & Getter Method
@@ -53,8 +75,5 @@ public class videos {
         this.checkOut = checkOut;
     }
 
-    //To-String methods
-    public String toString() {
-        return "Video Name : " + videoName + ", " + "Video Rating : " + rating + ", " + "Is video available : " + checkOut + ".";
-    }
+
 }

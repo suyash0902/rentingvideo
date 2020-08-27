@@ -7,6 +7,8 @@
 
 package defining;
 
+import java.util.Arrays;
+
 public class videostore {
     private videos[] store;
 
@@ -18,5 +20,9 @@ public class videostore {
         this.store = store;
     }
 
+    @Override
+    public String toString() {
+        return Arrays.toString(store);
+    }
 }
 

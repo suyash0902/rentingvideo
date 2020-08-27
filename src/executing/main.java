@@ -12,9 +12,7 @@ import defining.videos;
 public class main {
     public static void main(String[] args) {
         videos video = new videos("Intesteller", 10, true);
-        System.out.println("Video Name : " + video.getVideoName() + ", "
-                + "Rating : " + video.getRating() + ", "
-                + "Is Video Available : " + video.isCheckOut() + ".");
+        System.out.println(video);
 
     }
 }

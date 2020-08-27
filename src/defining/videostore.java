@@ -8,5 +8,15 @@
 package defining;
 
 public class videostore {
+    private videos[] store;
+
+    public videos[] getStore() {
+        return store.clone();
+    }
+
+    public void setStore(videos[] store) {
+        this.store = store;
+    }
+
 }
 

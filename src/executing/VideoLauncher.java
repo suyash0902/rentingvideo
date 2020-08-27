@@ -7,6 +7,8 @@
 
 package executing;
 
+import java.util.Scanner;
+
 public class VideoLauncher {
     public static void main(String[] args) {
         System.out.println("MAIN MENU");
@@ -17,6 +19,9 @@ public class VideoLauncher {
         System.out.println("4. Receive rating : ");
         System.out.println("5. List inventory : ");
         System.out.println("Enter your choice from (1-6) : ");
+        Scanner scanner = new Scanner(System.in);
+        int customerInput = scanner.nextInt();
+        scanner.close();
     }
 }
 

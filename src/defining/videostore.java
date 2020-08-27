@@ -68,5 +68,16 @@ public class videostore {
     public void doReturn(String name) {
         System.out.println("Thank you for returning \"" + name + "\".");
     }
+
+    /**
+     * this will allow us to change rating of a video from the video-store.
+     *
+     * @param name   the name of the video we want to change
+     * @param rating the new rating of the video
+     */
+    public void receiveRating(String name, int rating) {
+        System.out.println("The new rating of\"" + name + "\"is" + rating);
+
+    }
 }
 

@@ -12,6 +12,10 @@ import java.util.Arrays;
 public class videostore {
     private videos[] store;
 
+    public videostore() {
+        this.store = new videos[5];
+    }
+
     public videos[] getStore() {
         return store.clone();
     }

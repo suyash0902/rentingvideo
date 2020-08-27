@@ -7,17 +7,16 @@
 
 package executing;
 
-import defining.videos;
-
 public class VideoLauncher {
     public static void main(String[] args) {
-        videos video = new videos("Titanic", 10, true);
-        videos video1 = new videos("Shutter Island", 9, false);
-        if (video.equals(video1)) {
-            System.out.println("equal");
-        } else {
-            System.out.println("not equal");
-        }
+        System.out.println("MAIN MENU");
+        System.out.println("=========");
+        System.out.println("1. Add Video : ");
+        System.out.println("2. Check Out Video : ");
+        System.out.println("3. Return Video : ");
+        System.out.println("4. Receive rating : ");
+        System.out.println("5. List inventory : ");
+        System.out.println("Enter your choice from (1-6) : ");
     }
 }
 

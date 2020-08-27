@@ -79,7 +79,11 @@ public class videos {
     //Allows customers to rent a video.
     public void doCheckOut() {
         System.out.println("Thank you for renting.");
+    }
 
+    //Allows customer to return a video.
+    public void doReturn() {
+        System.out.println("Thank you for returning.");
     }
 
 

@@ -41,5 +41,24 @@ public class videostore {
     public int hashCode() {
         return Arrays.hashCode(getStore());
     }
+
+    /**
+     * this methods all to add video to video-store.
+     *
+     * @param name the name of video we want to add
+     */
+    public void addVideo(String name) {
+        System.out.println("\"" + name + "\"is now added to the video-store.");
+    }
+
+    /**
+     * this will allow us to rent a video from the video-store.
+     *
+     * @param name the name of the video we want to rent
+     */
+    public void doCheckOut(String name) {
+        System.out.println("Thank you for renting \"" + name + "\"");
+
+    }
 }
 

@@ -13,6 +13,21 @@ public class videos {
     private boolean checkOut;
     private int rating;
 
+    //Constructor method
+    //Non-parameterized constructor
+    public videos() {
+        this.videoName = "Inception";
+        this.rating = 9;
+        this.checkOut = false;
+    }
+
+    //Parameterized constructor
+    public videos(String videoName, int rating, boolean checkOut) {
+        this.videoName = videoName;
+        this.rating = rating;
+        this.checkOut = checkOut;
+    }
+
     //Setter Method & Getter Method
     public String getVideoName() {
         return videoName;

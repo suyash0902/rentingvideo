@@ -11,11 +11,10 @@ import defining.videos;
 
 public class main {
     public static void main(String[] args) {
-        videos video = new videos();
-        video.setVideoName("1");
-        video.setRating(6);
-        video.setCheckOut(true);
-        System.out.println("video name : " + video.getVideoName() + "," + "rating : " + video.getRating() + "," + "is video available : " + video.isCheckOut() + ".");
+        videos video = new videos("Intesteller", 10, true);
+        System.out.println("Video Name : " + video.getVideoName() + ", "
+                + "Rating : " + video.getRating() + ", "
+                + "Is Video Available : " + video.isCheckOut() + ".");
 
     }
 }
